@@ -1,0 +1,12 @@
+.banner{
+    background-color: cadetblue;
+    margin-bottom: 50px;
+    height: 100px;
+}
+
+.banner-text{
+    top: 2%;
+    left: 40%;
+    position: absolute;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
