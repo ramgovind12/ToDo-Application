@@ -39,6 +39,16 @@
           />
         </div>
         <br>
+        <div class="form-group">
+          <label for="Date">Date</label>
+          <input
+            type="date"
+            name="date"
+            class="form-control"
+            placeholder="Set Date"
+          />
+        </div>
+        <br>
         <input type="submit" class="btn btn-success" />
       </form>
     </div>
@@ -50,7 +60,9 @@
             <div class="card-body">
                 <h5 class="card-title">{{i.name}} </h5>
                 <p><b>{{i.priority}} </b></p>
+                <p><b>{{i.date}} </b></p>
                 <a class="btn btn-danger" href="{% url 'delete' i.id %}">Done</a>
+                <a class="btn btn-warning" href="{% url 'update' i.id %}">Update</a>
             </div>
         </div>
         <br>

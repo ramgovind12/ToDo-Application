@@ -1,9 +1,12 @@
 {% extends 'base.html' %}
 
 {% block content %}
+
 <form action="" method="post">
     {% csrf_token %}
-    <p>Are you sure task is done?</p>
+    {{f.as_p}}
     <button type="submit">Confirm</button>
 </form>
+
+
 {% endblock %}
