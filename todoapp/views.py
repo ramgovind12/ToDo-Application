@@ -1,6 +1,19 @@
 from django.shortcuts import redirect, render,HttpResponse
 from . models import Task
 from . forms import TodoForm
+from django.views.generic import ListView
+from django.views.generic.detail import DetailView
+
+
+class TaskListView(ListView):
+    model = Task
+    template_name = 'home.html'
+    context_object_name = 'task1'
+
+class TaskDetailView(DetailView):
+    model = Task
+    template_name = ''
+    
 
 # Create your views here.
 def home(request):
