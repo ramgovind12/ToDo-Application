@@ -42,5 +42,5 @@ Follow these steps to set up the Todo application:
 5. **Run Server:**
    
    ```bash
-   pip install -r requirements.txt
+   python manage.py runserver
 
